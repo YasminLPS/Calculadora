@@ -1,0 +1,85 @@
+*{
+    box-sizing: border-box;  /*Considerar borda como tamanho total*/
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+body{
+    background-color: #f6f8fc;
+
+}
+
+input::placeholder{
+    color: rgb(185, 185, 185);
+    align-self: flex-end;
+}
+
+.inputCalc{
+    width: 322px;
+    height: 75px;
+    background-color: black;
+    border: none;
+    border-top-right-radius: 1.5rem;
+    border-top-left-radius: 1.5rem;
+    font-size: 2em;
+    text-align: right;
+    padding-right: 40px;
+    color: #fff;
+}
+
+.content{
+    height: auto;
+    width: 500px;
+    padding: 1rem;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.areaButtons{
+    font-size: 0;
+    display: inline-flexbox;
+}
+.options{
+    height: 4rem;
+    width: 5rem;
+    padding: 0;
+    border: 0.1px solid rgb(213, 213, 213);
+    cursor: pointer;
+}
+
+.options:hover{
+    border: 0.1px solid rgb(202, 202, 202);
+    background-color: #c8c8c8;
+    cursor: pointer;
+}
+
+.buttonEqual{
+    height: 16rem;
+    width: 5rem;
+    position: absolute;
+    float: right;
+    margin-left: 240px;
+    border: none;
+    border-bottom-right-radius: 1.5rem;
+    background-color: rgb(255, 123, 0);
+    cursor: pointer;
+}
+
+.buttonEqual:hover{
+    background-color: rgb(197, 104, 18);
+}
+
+.arredondar{
+    border-bottom-left-radius: 1.5rem;
+}
+
+@media screen and (min-width: 992px){
+    .content{
+        max-width: 992px;
+        height: auto;
+        margin: 1rem auto;
+        border-radius: 1rem;
+    }
+}

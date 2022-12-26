@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript" src="js/script.js"></script>
+
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="content">
+        <section id="campoNumeros" >
+            <input id="resultado" type="text" placeholder="0" disabled="disabled" class="inputCalc">
+        </section>
+
+        <section id="botoes" class="botoes">
+            <div class="areaButtons">
+                <button onclick="insert('+')" class="options">+</button>
+                <button onclick="insert('-')" class="options">-</button>
+                <button onclick="insert('*')" class="options">x</button>
+                <button onclick="insert('/')" class="options">/</button>
+            </div>
+
+            <div>
+                <button onclick="calcular()" class="buttonEqual">=</button>
+            </div>
+
+            <div class="areaButtons">
+                <button onclick="insert('7')" class="options">7</button>
+                <button onclick="insert('8')" class="options">8</button>
+                <button onclick="insert('9')" class="options">9</button>
+            </div>
+
+            <div class="areaButtons">
+                <button onclick="insert('4')" class="options">4</button>
+                <button onclick="insert('5')" class="options">5</button>
+                <button onclick="insert('6')" class="options">6</button>
+            </div>
+            
+            <div class="areaButtons">
+                <button onclick="insert('1')" class="options">1</button>
+                <button onclick="insert('2')" class="options">2</button>
+                <button onclick="insert('3')" class="options">3</button>
+            </div>
+
+            <div class="areaButtons">
+                <button onclick="insert('0')" class="options arredondar">0</button>
+                <button onclick="insert('.')"class="options">.</button>
+                <button onclick="clearCampo()" class="options">C</button>
+            </div>
+
+        </section>
+    </div>
+</body>
+</html>
